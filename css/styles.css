@@ -1,0 +1,148 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #31383e;
+	font-family:Arial,Helvetica, sans-serif;
+	
+	-webkit-user-select:none; 
+	-webkit-touch-callout:none;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	/*-webkit-tap-highlight-color: rgba(0,0,0,0);*/		
+}
+
+header{
+	height:50px;
+	display: block;
+	border-top:3px solid #89c403;
+	border-bottom: 1px solid #41484e;
+}
+
+header .site-name{
+	height: 50px;
+	color:#89c403;
+	font-size: 18px;
+	padding:0px 10px;
+	font-weight: bold;
+	line-height: 50px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #272F36;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+}
+
+header nav{
+	display: inline-block;
+}
+
+header nav a{
+	color:#929da7;
+	margin:0px 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+header nav a:hover,
+header nav a.active{
+	color:#89c403;
+}
+
+h1{
+	color:#89c403;
+	font-size: 48px;
+	margin:30px 0px 10px 0px;
+	text-transform: uppercase;
+}
+
+h2{
+	margin: 0;
+	padding:0;
+	color:#929da7;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.top-links{
+	display: block;
+	margin:20px 0 0 0;
+	text-align: center;
+}
+
+.top-links a{
+	color:#929da7;
+	margin:0px 5px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.top-links a:hover,
+.top-links  a.active{
+	color:#89c403;
+}
+
+.center-align{text-align:center;}
+
+#content{
+	padding:10px;
+	display:block;
+	margin:0 auto;
+	max-width:1000px;
+}
+
+section{
+	display: block;
+	margin:20px 10px;
+}
+
+.box-panel{
+	width:280px;
+	height:160px;
+	padding:10px;
+	margin: 4px 2px;
+	vertical-align: top;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #484d52;
+	transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+}
+
+.box-panel:hover{
+	background-color: #565d63;
+}
+
+.box-panel-title{
+	color:#89c403;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin:50px 0 10px 0;
+}
+
+.box-panel-description{
+	color:#929da7;
+	display: block;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+
+footer{
+	color:#929da7;
+	display: block;
+	font-size: 11px;
+	text-align: center;
+	margin:50px 0 20px 0;
+}
+
+footer a{
+	color:#929da7;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color:#89c403;
+	text-decoration: underline;
+}
