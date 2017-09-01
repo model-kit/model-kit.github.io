@@ -103,6 +103,34 @@ section{
 	line-height: 1.5em;
 }
 
+.panel{
+	display: block;
+	padding:8px 10px;
+}
+
+.half{
+	width:48%;
+	margin: 0 5px;
+	min-height: 150px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+.code-box{
+	margin:10px;
+	padding:10px;
+	outline: none;
+	display: block;
+	color: #89c403;
+	font-size: 12px;
+	min-height:200px;
+	border:1px solid #12191C;
+	background-color:#161d23;
+	text-align:left !important;
+	width: -webkit-fill-available;
+}
+
 footer{
 	color:#929da7;
 	display: block;
@@ -119,4 +147,13 @@ footer a{
 footer a:hover{
 	color:#89c403;
 	text-decoration: underline;
+}
+
+
+@media only screen and (max-width : 768px) {
+	
+	.half{
+		width: 100%;
+	}
+	
 }
