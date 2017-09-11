@@ -15,6 +15,8 @@
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/buttons.css">
+<link rel="stylesheet" type="text/css" href="css/animations.css">
+
 
 </head>
 
@@ -38,67 +40,295 @@
 <h2 class="center-align">Get user click and push buttons</h2>
 
 <section>
+	
+	
+<div class="panel">
+	
+<a href="#" class="btn btn-1 blink"><span>Blink</span></a>
+		
+<textarea class="code-box" id="blink">
 
-<div class="panel center-align">
+.blink span{
+	backface-visibility: hidden;
+	-webkit-animation: blink 1s steps(5, start) infinite;
+}
 
-<div class="half">
-
-<a href="#" class="btn btn-1">Subscribe now!</a>
-<a href="#" class="btn btn-1 disabled">Subscribe now!</a>
-
-</div>
-
-<div class="half">
-
-<textarea class="code-box">
-sample
+@-webkit-keyframes blink {
+	to{
+		visibility:  hidden;
+	}
+} 
 
 </textarea>
 
+<button class="copy-btn" data-clipboard-target="#blink">Copy</button>
+	
 </div>
 
+<div class="panel">
+
+<a href="#" class="btn btn-1 flash"><span>Flash</span></a>
+
+<textarea class="code-box" id="flash">
+
+.flash span{
+	-webkit-animation: flash 800ms infinite;
+}
+
+@-webkit-keyframes flash {
+	from, 0%, 100% {
+		opacity: 1;
+	}
+	
+	50%, 75% {
+		opacity: 0;
+	}
+}
+
+</textarea>
+
+<button class="copy-btn" data-clipboard-target="#flash">Copy</button>
+	
 </div>
 
-<div class="panel center-align">
+<div class="panel">
 
-<div class="half">
+<a href="#" class="btn btn-1 pulse"><span>Pulse</span></a>	
 
-<a href="#" class="btn btn-2">Subscribe now!</a>
-<a href="#" class="btn btn-2 disabled">Subscribe now!</a>
+<textarea class="code-box" id="pulse">
 
-</div>
+.pulse{
+    -webkit-animation: pulse 1s ease-in-out infinite;
+}
 
-<div class="half">
-
-<textarea class="code-box">
-sample
+@-webkit-keyframes pulse{
+    0%{
+        -webkit-transform:scale(1,1);
+    }
+    50%{
+        -webkit-transform:scale(0.95,0.95);
+    }
+    100%{
+        -webkit-transform:scale(1,1);
+    }
+}
 
 </textarea>	
-				
+
+<button class="copy-btn" data-clipboard-target="#pulse">Copy</button>
+	
 </div>
 
+<div class="panel">
+
+<a href="#" class="btn btn-1 wobble"><span>Wobble</span></a>	
+
+<textarea class="code-box" id="wobble">
+
+.wobble{
+    -webkit-animation: wobble 800ms ease-in-out infinite;
+}
+
+@-webkit-keyframes wobble {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+  }
+}
+	
+</textarea>	
+
+<button class="copy-btn" data-clipboard-target="#wobble">Copy</button>
+	
 </div>
 
-<div class="panel center-align">
+<div class="panel">
 
-<div class="half">
+<a href="#" class="btn btn-1 tada"><span>Tada</span></a>	
 
-<a href="#" class="btn btn-3">Subscribe now!</a>
-<a href="#" class="btn btn-3 disabled">Subscribe now!</a>
+<textarea class="code-box" id="tada">
 
+.tada{
+    -webkit-animation: tada 800ms ease-in-out infinite;
+}
+
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+    	
+</textarea>	
+
+<button class="copy-btn" data-clipboard-target="#tada">Copy</button>
+	
 </div>
 
-<div class="half">
+<div class="panel">
 
-<textarea class="code-box">
-sample
+<a href="#" class="btn btn-1 rubber"><span>Rubber</span></a>	
 
-</textarea>
+<textarea class="code-box" id="rubber">
 
+.rubber{
+    -webkit-animation: rubber 800ms ease-in-out infinite;
+}
+
+@-webkit-keyframes rubber{
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+    	
+</textarea>	
+
+<button class="copy-btn" data-clipboard-target="#rubber">Copy</button>
+	
 </div>
 
+<div class="panel">
+
+<a href="#" class="btn btn-1 jello"><span>Jello</span></a>	
+
+<textarea class="code-box" id="jello">
+
+.jello{
+    -webkit-animation: jello 800ms ease-in-out infinite;
+}
+
+@-webkit-keyframes jello {
+  from, 11.1%, 100% {
+    -webkit-transform: none;
+  }
+
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+     	
+</textarea>	
+
+<button class="copy-btn" data-clipboard-target="#jello">Copy</button>
+	
 </div>
 
+<div class="panel">
+
+<a href="#" class="btn btn-1 shake"><span>Shake</span></a>	
+
+<textarea class="code-box" id="shake">
+
+.shake{
+    -webkit-animation: shake 1500ms ease-in-out infinite;
+}
+
+@-webkit-keyframes shake {
+  from, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+  }
+}
+     	
+</textarea>	
+
+<button class="copy-btn" data-clipboard-target="#shake">Copy</button>
+	
+</div>
+
+<div class="panel">
+	
+</div>
+	
 </section>
 
 </div>
@@ -111,6 +341,8 @@ sample
 	
 </body>
 
+<script type="text/javascript" src="js/clipboard.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+
 
 </html>

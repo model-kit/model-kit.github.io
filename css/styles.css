@@ -11,6 +11,9 @@ body{
 	/*-webkit-tap-highlight-color: rgba(0,0,0,0);*/		
 }
 
+::-moz-selection { color:#fff; background: #74b807; }
+::selection { color:#fff; background: #74b807; }
+
 header{
 	height:50px;
 	display: block;
@@ -59,6 +62,8 @@ h2{
 
 .center-align{text-align:center;}
 
+.instruction{color:#dde5ec;}
+
 #content{
 	padding:10px;
 	display:block;
@@ -68,7 +73,8 @@ h2{
 
 section{
 	display: block;
-	margin:20px 10px;
+	margin:20px 0px;
+	text-align: center;
 }
 
 .box-panel{
@@ -104,18 +110,30 @@ section{
 }
 
 .panel{
-	display: block;
-	padding:8px 10px;
-}
-
-.half{
-	width:48%;
-	margin: 0 5px;
-	min-height: 150px;
-	vertical-align: top;
+	width:280px;
+	height: auto;
+	padding:10px;
+	position: relative;
 	display: inline-block;
 }
 
+.rbox{
+	color:#fff;
+	width:240px;
+	outline: none;
+	display: block;
+	font-size: 18px;
+	margin:10px auto;
+	padding:15px 0px;
+	font-weight: bold;
+	border-radius: 4px;
+	text-decoration: none;
+	
+	border:1px solid #74b807;
+	text-shadow:0px 1px 0px #528009;
+	
+	background-color: #89c403;
+}
 
 .code-box{
 	margin:10px;
@@ -125,10 +143,44 @@ section{
 	color: #89c403;
 	font-size: 12px;
 	min-height:200px;
+	border-radius: 8px;
 	border:1px solid #12191C;
 	background-color:#161d23;
 	text-align:left !important;
 	width: -webkit-fill-available;
+}
+
+.copy-btn{
+	top:90px;
+	right:27px;
+	color:#fff;
+	outline: none;
+	cursor: pointer;
+	font-size: 12px;
+	padding:5px 10px;
+	font-weight: bold;
+	position: absolute;
+	border-radius: 5px;
+	border:1px solid #74b807;
+	text-shadow:0px 1px 0px #528009;
+	
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	
+	background-color:#89c403;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
+}
+
+#auto_animate{
+	overflow: hidden;
+	position: relative;
 }
 
 footer{
@@ -152,8 +204,8 @@ footer a:hover{
 
 @media only screen and (max-width : 768px) {
 	
-	.half{
-		width: 100%;
+	.box-panel{
+		margin: 4px 0px;
 	}
 	
 }
