@@ -1,0 +1,53 @@
+h1,h2,h3,h4,h5,h6{
+	color:#89c403;
+}
+
+h1{
+	font-size: 2em;	
+}
+
+h2{
+	font-size: 1.75em;
+}
+
+h3{
+	
+	font-size: 1.5em;
+}
+
+h4{
+	font-size: 1.313em;
+	
+}
+
+h5{
+	font-size: 1.125em;
+}
+
+h6{
+	font-size: 1em;	
+}
+
+.text-muted{
+	color: #758fa9;	
+}
+
+.text-primary{
+	color: #bdc3c7;
+}
+
+.text-warning{
+	color: #f1c40f;
+}
+
+.text-danger{
+	color: #e74c3c;
+}
+
+.text-success{
+	color: #2ecc71;
+}
+
+.text-info{
+	color: #1abc9c;
+}

@@ -43,24 +43,34 @@ header nav a.active{
 	color:#89c403;
 }
 
-h1{
+h1.title{
 	color:#89c403;
-	font-size: 48px;
+	font-size: 2em;
 	margin:30px 0px 10px 0px;
 	text-transform: uppercase;
 }
 
-h2{
+h2.sub{
 	margin: 0;
 	padding:0;
 	color:#929da7;
 	font-size: 16px;
-	line-height: 1.5em;
+	line-height: 1.75em;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
+
+h3.title{
+	padding:10px;
+	margin:10px 0;
+	display: block;
+	background-color: #2b3238;
+}
+
 .center-align{text-align:center;}
+.left-align{text-align:left;}
+.right-align{text-align:right;}
 
 .instruction{color:#dde5ec;}
 
@@ -201,6 +211,35 @@ footer a:hover{
 	text-decoration: underline;
 }
 
+table, td, th {  
+	color:#ccc;  
+    text-align: left;
+}
+
+table {
+	width: 100%;
+	padding:20px 0;
+	max-width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding:5px;
+}
+
+td{
+	border-bottom: 1px solid #89c403;
+}
+
+.inline{
+	padding:0;
+	margin:10px 0;
+}
+
+.inline li{
+	margin:10px;
+	display: inline-block;
+}
 
 @media only screen and (max-width : 768px) {
 	
